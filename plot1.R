@@ -23,7 +23,7 @@ household_subset$Global_active_power = as.numeric(household_subset$Global_active
 household_subset$Global_active_powerkwh = household_subset$Global_active_power/1000
 
 # open png device
-png(filename="name.png", width = 480, height = 480, units = "px")
+png(filename="plot1.png", width = 480, height = 480, units = "px")
 
 hist(household_subset$Global_active_powerkwh, col="red", xlab = 'Global active power (kilowatts)',
      main="Global active power") 
